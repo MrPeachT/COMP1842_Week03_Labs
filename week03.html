@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript" src="week03.js"></script>
+</head>
+<body>
+
+    <script>
+        calcRectangleArea();
+        doCalc();
+        doPeri();
+        doAvg();
+        calcBMI();
+        calcMin();
+        findMax();
+    </script>>
+
+    <h1>Calculator Rectangle</h1>
+
+    <label for="width">Width:</label>
+    <input type="text" id="width" name="width"><br><br>
+
+    <label for="height">Height:</label>
+    <input type="text" id="height" name="height"><br><br>
+
+    <button type="button" onclick="doCalc()">Calculate Area</button>
+    <button type="button" onclick="doPeri()">Calculate Perimeter</button>
+    <button type="button" onclick="doAvg()">Calculate Average</button>
+
+    <p id="areaCalc"></p>
+    <p id="periCalc"></p>
+    <p id="avgCalc"></p>
+    <br><br>
+
+    <h1>Calculator BMI</h1>
+    <label for="weight">Weight (kg):</label>
+    <input type="text" id="weight" name="weight"><br><br>
+
+    <label for="height2">Height (m):</label>
+    <input type="text" id="height2" name="height2"><br><br>
+
+    <button type="button" onclick="calcBMI()">Calculate BMI</button>
+
+    <p id="bmiCalc"></p>
+    <br><br>
+
+    <h1>Calculator Minute</h1>
+    <label for="hour">Hours:</label>
+    <input type="text" id="hour" name="hours"><br><br>
+
+    <label for="minute">Minutes:</label>
+    <input type="text" id="minute" name="minutes"><br><br>
+
+    <button type="button" onclick="calcMin()">Calculate Total Minute</button>
+
+    <p id="minCalc"></p>
+    <br><br>
+
+    <h1>Find Max Value</h1>
+
+    <label for="num1">Number 1:</label>
+    <input type="text" id="num1" name="num1"><br><br>
+
+    <label for="num2">Number 2:</label>
+    <input type="text" id="num2" name="num2"><br><br>
+
+    <button type="button" onclick="findMax()">Find Max</button>
+    <p id="maxCalc"></p>
+
+</body>
+</html>

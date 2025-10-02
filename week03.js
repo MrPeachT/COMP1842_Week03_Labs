@@ -18,9 +18,10 @@ function doPeri() {
 }
 
 function doAvg() {
-    let newWidth = Number(document.getElementById("width").value);
-    let newHeight = Number(document.getElementById("height").value);
-    let newAvg = (newWidth + newHeight) / 2;
+    let numList = document.getElementById("num3").value;
+    let numArray = numList.split(",").map(Number);
+    let sum = numArray.reduce((acc, curr) => acc + curr, 0);
+    let newAvg = sum / numArray.length;
     document.getElementById("avgCalc").innerHTML = "The average is: " + newAvg;
 }
 
